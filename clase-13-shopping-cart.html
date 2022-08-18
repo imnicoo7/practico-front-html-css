@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle página</title>
+    <style>
+        :root{
+            --white: #ffffff;
+            --black: #000000;
+            --very-linght-pink: #C7C7C7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #acd9b2;
+            --ms: 14px;
+            --md: 16px;
+            --lg: 22px;
+        }
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .title{
+            font-size: var(--lg);
+        }
+        .title-c {
+            display: flex;
+            
+        }
+        .title-c img{
+            margin-right: 20px;
+            
+            transform: rotate(180deg);
+        }
+        .product-detail{
+            width: 360px;
+            padding: 30px;
+            position: absolute;
+            right: 0;
+        }
+        .my-order-container{
+            display: grid;
+            grid-template-rows: auto 1fr ;
+            width: 400px;
+        }
+        .my-order-content{
+            display: flex;
+            flex-direction: column;
+        }
+        .order{
+            display: grid;
+            grid-template-columns: auto 1fr  ;
+            align-items: center;
+            margin-bottom: 28px;
+            padding: 0 24px;
+            gap: 16px;
+            background-color: var(--text-input-field);
+            border-radius: 20px;
+        }
+        
+        .order p:nth-child(1){
+            display: flex;
+            flex-direction: column;
+        }
+       
+        .order p span:nth-child(1){
+            font-size: var(--md);
+            font-weight: bold;
+        }
+        .order p:nth-child(2){
+            text-align: end;
+            font-weight: bold;
+            font-size: var(--md);
+        }
+        
+        .shoping-car{
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            gap: 16px;
+            margin-bottom: 22px;
+            align-items: center;
+            
+        }
+        .shoping-car figure{
+            margin: 0;
+        }
+        .shoping-car figure img{
+            width: 70px;
+            height: 70px;
+            border-radius: 30px;
+            object-fit: fill;
+            
+        }
+        .shoping-car p:nth-child(2){
+            color: var(--very-linght-pink);
+        }
+        
+        .shoping-car p:nth-child(3){
+            font-size: var(--md);
+            font-weight: bold;
+            
+        }
+        
+        .button {
+            background-color: var(--hospital-green);
+            color: var(--white);
+            border: none;
+            border-radius: 12px;
+            height: 50px;
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            flex-direction: ro;
+        }
+        
+
+        @media (max-width: 640px) {
+            .product-detail{
+                width: 100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <aside class="product-detail">
+        <div class="title-c">
+            
+            <img src="/icons/flechita.svg" alt="">
+            <h1 class="title">Shopping cart</h1>
+            
+        </div>
+        <div class="my-order-content">
+
+            <div class="shoping-car">
+                <figure>
+                    <img src="https://beelectric.co/wp-content/uploads/2020/07/Moto-electrica-starker-thunder-PD.jpg" alt="carro">
+                </figure>
+                <p>Moto de moda ultimo</p>
+                <p>$30000</p>
+                <img src="/icons/icon_close.png" alt="close">
+            </div>
+            <div class="shoping-car">
+                <figure>
+                    <img src="https://beelectric.co/wp-content/uploads/2020/07/Moto-electrica-starker-thunder-PD.jpg" alt="carro">
+                </figure>
+                <p>Moto de moda ultimo</p>
+                <p>$30000</p>
+                <img src="/icons/icon_close.png" alt="close">
+
+            </div>
+            <div class="shoping-car">
+                <figure>
+                    <img src="https://beelectric.co/wp-content/uploads/2020/07/Moto-electrica-starker-thunder-PD.jpg" alt="carro">
+                </figure>
+                <p>Moto de moda ultimo</p>
+                <p>$30000</p>
+                <img src="/icons/icon_close.png" alt="close">
+
+            </div>
+            <div class="shoping-car">
+                <figure>
+                    <img src="https://beelectric.co/wp-content/uploads/2020/07/Moto-electrica-starker-thunder-PD.jpg" alt="carro">
+                </figure>
+                <p>Moto de moda ultimo</p>
+                <p>$30000</p>
+                <img src="/icons/icon_close.png" alt="close">
+
+            </div>
+            <div class="order">
+                <p>
+                    <span>Total</span>
+                </p>
+                <p>$560.00</p>
+            </div>
+            </div>         
+        </div>
+        <div class="product">
+            
+            <button class="button add_bt"> Checkout </button>
+        </div>
+    
+    </aside>
+</body >
+</html>
